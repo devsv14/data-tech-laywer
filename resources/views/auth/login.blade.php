@@ -32,9 +32,8 @@
             <div class="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
 
               <div class="d-flex justify-content-center py-4">
-                <a href="index.html" class="logo d-flex align-items-center w-auto">
-                    <img src="assets/img/logo.png" alt="">
-                  <span class="d-none d-lg-block">DOMOTEPEC</span>
+                <a href="index.html" class="logo d-flex align-items-center w-auto">                    
+                  <span class="d-none d-lg-block" style='color:black'>DATA TECH LAWYER</span>
                 </a>
               </div><!-- End Logo -->
 
@@ -42,17 +41,32 @@
 
                 <div class="card-body">
 
-                  <div class="pt-4 pb-2">
                     <div style="text-align: center;">
-                      <img style="width: 25%; margin: auto;" src="logo.jpeg" alt="Logo">
+                      <img style="width: 75%; margin: auto;" src="dtlLogo.png" alt="Logo">
                     </div>
-                                        <h5 class="card-title text-center pb-0 fs-4">BIENVENIDO</h5>
-                    <p class="text-center small">Ingrese a su cuenta</p>
-                  </div>
+                   
+              
 
                   <form class="row g-3 needs-validation" action="{{route('login.auth')}}" method="POST" novalidate>
                     @csrf
-                    <div class="col-12">
+
+                    <div class="row">
+                      <div class="col-sm-12">
+                          <div class="content-input mb-2">
+                              <input id="usuario" name="usuario" type="text" class="custom-input material"
+                                  placeholder=" "  autocomplete="off" >
+                              <label class="input-label" for="">Usuario</label>
+                          </div>
+                      </div>
+                      <div class="col-sm-12">
+                          <div class="content-input mb-2">
+                              <input id="password" name="password" type="text" class="custom-input material"
+                                  placeholder="" autocomplete="off" >
+                              <label class="input-label" for="">Password</label>
+                          </div>
+                      </div>
+                  </div>
+                   <!-- <div class="col-12">
                       <div class="input-group has-validation">
                         <span class="input-group-text" id="inputGroupPrepend">Usuario</span>
                         <input type="text" name="usuario" class="form-control" id="usuario" required>
@@ -73,9 +87,9 @@
                                 <option value="">Sucursal 1</option>
                             </select>
                         </div>
-                      </div>
+                      </div>-->
                     <div class="col-12">
-                      <button class="btn btn-primary w-100" type="submit">Iniciar</button>
+                      <button class="btn btn-dark w-100" type="submit">Iniciar</button>
                     </div>
                   </form>
 
