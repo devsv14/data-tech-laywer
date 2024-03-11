@@ -1,0 +1,31 @@
+.buttons-excel{
+    padding: 4px 32px;
+    font-size: 15px;
+    background: #0d6efd;
+    outline: none;
+    border: none;
+}
+
+/***
+*Style generales
+***/
+.table-custom {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    border-radius: 2px;
+    width: 100%;
+    margin-left: 0px;
+    border: 1px solid #f2f2f2 !important;
+  }
+  
+  .table-custom thead {
+    background: #343a40;
+    font-family: Helvetica, Arial, sans-serif;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .table-custom>thead>tr>th {
+    padding: 2px;
+  }
+  
