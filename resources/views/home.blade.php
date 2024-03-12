@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', 'Domotepec | Inicio')
+@section('title', 'DTL | Inicio')
 
 @section('content')
-<h3>App en desarrollo - AVSystem</h3>
+<h3>App en desarrollo</h3>
 @endsection

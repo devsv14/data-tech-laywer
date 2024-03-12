@@ -66,28 +66,7 @@
                           </div>
                       </div>
                   </div>
-                   <!-- <div class="col-12">
-                      <div class="input-group has-validation">
-                        <span class="input-group-text" id="inputGroupPrepend">Usuario</span>
-                        <input type="text" name="usuario" class="form-control" id="usuario" required>
-                        <div class="invalid-feedback">Please enter your username.</div>
-                      </div>
-                    </div>
-
-                    <div class="col-12">
-                        <div class="input-group has-validation">
-                          <span class="input-group-text" id="inputGroupPrepend">Clave</span>
-                          <input type="password" name="password" class="form-control" id="password" required>
-                          <div class="invalid-feedback">Please enter your username.</div>
-                        </div>
-                      </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <select class="form-control" name="" id="">
-                                <option value="">Sucursal 1</option>
-                            </select>
-                        </div>
-                      </div>-->
+                 
                     <div class="col-12">
                       <button class="btn btn-dark w-100" type="submit">Iniciar</button>
                     </div>

@@ -7,6 +7,7 @@ use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PlanillaController;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\ExpedientesController;
 use Egulias\EmailValidator\Warning\Comment;
 use Illuminate\Support\Facades\Route;
 
@@ -17,7 +18,7 @@ Route::get('/',[HomeController::class,'index'])->name('home')->middleware('auth'
 Route::get('/login',[LoginController::class,'index'])->name('login');
 Route::post('/login',[LoginController::class,'login'])->name('login.auth');
 Route::get('/logout',[LoginController::class,'logout'])->name('logout');
-
+Route::get('/expedientes',[ExpedientesController::class,'index'])->name('expedientes');
 ///RUTAS PRODUCTO
 Route::post('productos/save',[ProductController::class,'createNewProduct'])->name('insert.newproduct')->middleware('auth');
 
