@@ -1,16 +1,17 @@
+
 @extends('layouts.app')
 
 @section('title', 'Expedientes')
 
 @section('content')
-
+@include('expedientes.modals.new_expediente')
 <main class="main">
   <div class="pagetitle">
     <h1 style="text-align: center;">EXPEDIENTES</h1>
     <nav>
       <ol class="breadcrumb">
         <li class="breadcrumb-item"><a href="{{ route('home') }}">Home</a></li>
-        <li class="breadcrumb-item active">Compras</li>
+        <li class="breadcrumb-item active">Reporteria expedientes</li>
       </ol>
     </nav>
   </div><!-- End Page Title -->
@@ -22,7 +23,7 @@
             <h5 class="card-title">Expedientes</h5>
 
             <!-- En tu vista -->
-            <button id="openModalEnvLab" class="btn btn-outline-success mb-3"  data-bs-toggle="modal" data-bs-target="#new-compra"><i class="fas fa-plus"></i>
+            <button id="openModalEnvLab" class="btn btn-outline-success mb-3"  data-bs-toggle="modal" data-bs-target="#new-expediente-modal"><i class="fas fa-plus"></i>
               Crear Expediente</button>
             
 
